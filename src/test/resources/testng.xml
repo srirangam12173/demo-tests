@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Monk_Test_Suite" parallel="tests" thread-count="1" >
+<listeners>
+ <listener class-name="com.utils.ScreenshotUtil"></listener>
+</listeners>
+
+<parameter name="browser" value="chrome"></parameter>
+
+  <test name="LoginTest">
+    <classes>
+      <class name="com.tests.LoginTest"/>
+    </classes>
+   </test>
+   
+   <test name="FindSuggestionsTest">
+    <classes>
+      <class name="com.tests.FindSuggestionsTest"/>
+    </classes>
+   </test>
+  </suite>
